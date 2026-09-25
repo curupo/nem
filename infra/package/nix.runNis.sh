@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd nis
-java -Xms4G -Xmx6G -cp ".:./*:../libs/*" org.nem.deploy.CommonStarter
+java --add-opens=java.base/java.lang=ALL-UNNAMED -Xms4G -Xmx6G -cp ".:./*:../libs/*" org.nem.deploy.CommonStarter
 cd -
